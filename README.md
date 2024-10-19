@@ -16,7 +16,7 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 5. Adjust w and b by computing their gradients with respect to the loss and applying gradient descent updates
 6. Iterate over the training data, repeatedly updating the parameters until convergence (or for a fixed number of iterations)
 7. Use the final model parameters to predict robabilities for new data and classify based on threshold (eg: 0.5 for binary calculation)
-8. 
+   
 ## Program:
 ```
 /*
