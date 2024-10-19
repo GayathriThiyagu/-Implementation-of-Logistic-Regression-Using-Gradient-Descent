@@ -8,12 +8,15 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import the necessary python packages
-2. Read the dataset.
-3. Define X and Y array.
-4. Define a function for costFunction,cost and gradient.
-5. Define a function to plot the decision boundary and predict the Regression value
-  
+1. Gather labeled data with input features X and Y for classification as 0 or 1
+2. Set initial values for the model parameters (weight w and bias b), typicaly to small random values.
+3. Use the sigmoid function to predict probabilities:
+   P(y=1|X) = 1/(1+e^(wX+b))
+4. Compute the binary cross_entropy loss to measure how well the model's predictions match the actual labels
+5. Adjust w and b by computing their gradients with respect to the loss and applying gradient descent updates
+6. Iterate over the training data, repeatedly updating the parameters until convergence (or for a fixed number of iterations)
+7. Use the final model parameters to predict robabilities for new data and classify based on threshold (eg: 0.5 for binary calculation)
+8. 
 ## Program:
 ```
 /*
@@ -91,23 +94,23 @@ Dataset
 
 ![Screenshot 2024-09-16 101956](https://github.com/user-attachments/assets/e432594c-7c64-4182-82cc-e041207cc62e)
 
-Array
+# Array
 
 ![Screenshot 2024-09-16 102007](https://github.com/user-attachments/assets/f0d21389-20b1-48da-8fca-17908ee15fcd)
 
-Accuracy
+# Accuracy
 
 ![Screenshot 2024-09-16 102016](https://github.com/user-attachments/assets/80ccfbd3-ffc8-466d-ae52-6aa2365c4f48)
 
-Y Prediction
+# Y Prediction
 
 ![Screenshot 2024-09-16 102023](https://github.com/user-attachments/assets/eb95a4d3-2ed9-443d-80c8-7f5e4c905f46)
 
-Y
+# Y
 
 ![Screenshot 2024-09-16 102028](https://github.com/user-attachments/assets/3e27ea3f-c1a0-4ea6-a1fc-755cb48dbeca)
 
-New Prediction
+# New Prediction
 
 ![Screenshot 2024-09-16 102035](https://github.com/user-attachments/assets/d9b842e7-0ea5-4eab-af32-06aea7a36285)
 
